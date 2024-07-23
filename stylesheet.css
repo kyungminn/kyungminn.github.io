@@ -97,7 +97,7 @@ heading {
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: bold
 }
 
 name {
@@ -145,7 +145,6 @@ span.highlight {
   max-width: 100%;
   margin: auto;
   display: block;
-  clip-path: circle();
 }
 
 .institute-logo-small{
