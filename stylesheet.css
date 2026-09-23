@@ -96,8 +96,10 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bold
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 6px;
 }
 
 name {
@@ -194,13 +196,19 @@ span.highlight {
 
 
 .left-column{
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: auto;
 }
 
 .right-column{
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .right-column{
+    margin-top: 8px;
+  }
 }
 
 .personal-column{
@@ -220,6 +228,11 @@ span.highlight {
 .common-rows {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.teaching-list {
+  margin: 4px 0 0;
+  padding-left: 24px;
 }
 
 .section-heading-rows {
