@@ -16,6 +16,7 @@
   --hero-accent: #8ab4f8;
 
   --font-display: 'Bitter', Georgia, serif;
+  --font-heading: 'Rowan', 'Bitter', Georgia, serif;
 
   --maxw: 880px;
   --gutter: 24px;
@@ -97,9 +98,9 @@ a:focus-visible {
 .hero-name {
   margin: 0;
   color: var(--hero-title);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: -.01em;
 }
@@ -212,7 +213,7 @@ a:focus-visible {
   gap: 16px;
   margin: 0 0 32px;
   color: var(--text);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.3;
