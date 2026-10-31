@@ -233,15 +233,68 @@ a:focus-visible {
 }
 
 /* ---------- Publications ---------- */
+.pub-filter-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pub-filter {
+  display: flex;
+  gap: 2px;
+  width: fit-content;
+  margin: -12px 0 28px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.pub-filter label {
+  padding: 4px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .8125rem;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition: color .15s ease, background-color .15s ease;
+}
+
+.pub-filter label:hover {
+  color: var(--accent-strong);
+}
+
+#pub-filter-selected:checked ~ .pub-filter label[for="pub-filter-selected"],
+#pub-filter-all:checked ~ .pub-filter label[for="pub-filter-all"] {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+#pub-filter-selected:focus-visible ~ .pub-filter label[for="pub-filter-selected"],
+#pub-filter-all:focus-visible ~ .pub-filter label[for="pub-filter-all"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+#pub-filter-selected:checked ~ .paper-list .paper:not(.paper-selected) {
+  display: none;
+}
+
+.paper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .paper {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
   align-items: start;
   gap: 28px;
-}
-
-.paper + .paper {
-  margin-top: 40px;
 }
 
 .paper-media {
@@ -458,8 +511,8 @@ a:focus-visible {
     gap: 16px;
   }
 
-  .paper + .paper {
-    margin-top: 44px;
+  .paper-list {
+    gap: 44px;
   }
 }
 

@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap">
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=rowan@600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260928-1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261031-1">
   <link rel="icon" type="image/png" href="pictures/favicon.png">
   <link rel="apple-touch-icon" href="pictures/favicon.png">
 </head>
@@ -75,85 +75,121 @@
       <h2 class="section-title">Publications</h2>
       <!-- <p class="section-note">* Equal contribution &nbsp;·&nbsp; † Corresponding author</p> -->
 
-      <article class="paper">
-        <div class="paper-media">
-          <video src="videos/flashdexretarget.mp4" autoplay loop muted playsinline aria-label="flashdexretarget"></video>
-        </div>
-        <div class="paper-body">
-          <h3 class="paper-title">
-            FlashDexRetarget: Accelerating Dexterous Manipulation Data Generation through Multi-Motion Retargeting
-          </h3>
-          <p class="paper-authors">
-            <strong>Kyungmin Lee*</strong>,
-            <a href="https://sibisibi.github.io/">Sibeen Kim*</a>,
-            <a href="https://godnpeter.github.io/">Dongyoon Hwang*</a>,
-            <a href="https://yoonsangoh.github.io/">Yoonsang Oh*</a>,
-            <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
-            <a href="https://leeyngdo.github.io/">Youngdo Lee</a>,
-            <a href="https://anahrendra.github.io/">I Made Aswin Nahrendra</a>,
-            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo†</a>,
-            <a href="https://joonleesky.github.io/">Hojoon Lee†</a>
-          </p>
-          <div class="paper-meta">
-            <span class="venue venue-pending">preprint</span>
-            <a class="paper-link" href="https://holiday-robot.github.io/FlashDexRetarget/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
-            <a class="paper-link" href="https://arxiv.org/abs/2610.01849"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
-            <a class="paper-link" href="https://github.com/Holiday-Robot/FlashDexRetarget"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
-          </div>
-        </div>
-      </article>
+      <input class="pub-filter-input" type="radio" name="pub-filter" id="pub-filter-selected" aria-label="Selected publications" checked>
+      <input class="pub-filter-input" type="radio" name="pub-filter" id="pub-filter-all" aria-label="All publications">
+      <div class="pub-filter">
+        <label for="pub-filter-selected">Selected</label>
+        <label for="pub-filter-all">All</label>
+      </div>
 
-      <article class="paper">
-        <div class="paper-media">
-          <video src="videos/phuma.mp4" autoplay loop muted playsinline aria-label="phuma"></video>
-        </div>
-        <div class="paper-body">
-          <h3 class="paper-title">
-            PHUMA: Physically Reliable Humanoid Locomotion Dataset
-          </h3>
-          <p class="paper-authors">
-            <strong>Kyungmin Lee*</strong>,
-            <a href="https://sibisibi.github.io/">Sibeen Kim*</a>,
-            <a href="https://leeyngdo.github.io/">Youngdo Lee</a>,
-            <a href="https://pmh9960.github.io/">Minho Park</a>,
-            <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
-            <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
-            <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
-            <a href="https://joonleesky.github.io/">Hojoon Lee†</a>,
-            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo†</a>
-          </p>
-          <div class="paper-meta">
-            <span class="venue">CoRL 2026 · Spotlight</span>
-            <a class="paper-link" href="https://davian-robotics.github.io/PHUMA/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
-            <a class="paper-link" href="https://arxiv.org/abs/2510.26236"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
-            <a class="paper-link" href="https://github.com/davian-robotics/PHUMA"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+      <div class="paper-list">
+        <article class="paper">
+          <div class="paper-media">
+            <video src="videos/pointmapvla.mp4" autoplay loop muted playsinline aria-label="pointmapvla"></video>
           </div>
-        </div>
-      </article>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              PointmapVLA: Scaling Robot Learning with Robot-Centric Pointmaps
+            </h3>
+            <p class="paper-authors">
+              <a href="https://godnpeter.github.io/">Dongyoon Hwang*</a>,
+              <a href="https://k00dj-19.github.io/">Dongjin Kim*</a>,
+              <a href="https://lee15253.github.io/">Byungkun Lee*</a>,
+              <strong>Kyungmin Lee</strong>,
+              <a href="https://aiclaudev.github.io/">Dohyun Lee</a>,
+              <a href="https://joonleesky.github.io/">Hojoon Lee</a>,
+              <a href="https://pmh9960.github.io/">Minho Park</a>,
+              <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo†</a>
+            </p>
+            <div class="paper-meta">
+              <span class="venue venue-pending">preprint</span>
+              <a class="paper-link" href="https://godnpeter.github.io/PointmapVLA-projectpage/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
+              <a class="paper-link" href="https://godnpeter.github.io/PointmapVLA-projectpage/static/PointmapVLA.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i>Paper</a>
+              <a class="paper-link" href="https://github.com/DAVIAN-Robotics/PointmapVLA"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+            </div>
+          </div>
+        </article>
 
-      <article class="paper">
-        <div class="paper-media">
-          <img src="pictures/icml2024atari-pb.png" alt="icml2024atari-pb">
-        </div>
-        <div class="paper-body">
-          <h3 class="paper-title">
-            ATARI-PB: Investigating Pre-Training Objectives for Generalization in Pixel-Based RL
-          </h3>
-          <p class="paper-authors">
-            <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
-            <a href="https://joonleesky.github.io/">Hojoon Lee*</a>,
-            <strong>Kyungmin Lee*</strong>,
-            <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
-            <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
-          </p>
-          <div class="paper-meta">
-            <span class="venue">ICML 2024</span>
-            <a class="paper-link" href="https://i-am-proto.github.io/atari-pb/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
-            <a class="paper-link" href="https://arxiv.org/abs/2406.06037"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
-            <a class="paper-link" href="https://github.com/dojeon-ai/atari-pb"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        <article class="paper paper-selected">
+          <div class="paper-media">
+            <video src="videos/flashdexretarget.mp4" autoplay loop muted playsinline aria-label="flashdexretarget"></video>
           </div>
-        </div>
-      </article>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              FlashDexRetarget: Accelerating Dexterous Manipulation Data Generation through Multi-Motion Retargeting
+            </h3>
+            <p class="paper-authors">
+              <strong>Kyungmin Lee*</strong>,
+              <a href="https://sibisibi.github.io/">Sibeen Kim*</a>,
+              <a href="https://godnpeter.github.io/">Dongyoon Hwang*</a>,
+              <a href="https://yoonsangoh.github.io/">Yoonsang Oh*</a>,
+              <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+              <a href="https://leeyngdo.github.io/">Youngdo Lee</a>,
+              <a href="https://anahrendra.github.io/">I Made Aswin Nahrendra</a>,
+              <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo†</a>,
+              <a href="https://joonleesky.github.io/">Hojoon Lee†</a>
+            </p>
+            <div class="paper-meta">
+              <span class="venue venue-pending">preprint</span>
+              <a class="paper-link" href="https://holiday-robot.github.io/FlashDexRetarget/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
+              <a class="paper-link" href="https://arxiv.org/abs/2610.01849"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+              <a class="paper-link" href="https://github.com/Holiday-Robot/FlashDexRetarget"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper paper-selected">
+          <div class="paper-media">
+            <video src="videos/phuma.mp4" autoplay loop muted playsinline aria-label="phuma"></video>
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              PHUMA: Physically Reliable Humanoid Locomotion Dataset
+            </h3>
+            <p class="paper-authors">
+              <strong>Kyungmin Lee*</strong>,
+              <a href="https://sibisibi.github.io/">Sibeen Kim*</a>,
+              <a href="https://leeyngdo.github.io/">Youngdo Lee</a>,
+              <a href="https://pmh9960.github.io/">Minho Park</a>,
+              <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+              <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
+              <a href="https://i-am-proto.github.io/">Donghu Kim</a>,
+              <a href="https://joonleesky.github.io/">Hojoon Lee†</a>,
+              <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo†</a>
+            </p>
+            <div class="paper-meta">
+              <span class="venue">CoRL 2026 · Spotlight</span>
+              <a class="paper-link" href="https://davian-robotics.github.io/PHUMA/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
+              <a class="paper-link" href="https://arxiv.org/abs/2510.26236"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+              <a class="paper-link" href="https://github.com/davian-robotics/PHUMA"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-media">
+            <img src="pictures/icml2024atari-pb.png" alt="icml2024atari-pb">
+          </div>
+          <div class="paper-body">
+            <h3 class="paper-title">
+              ATARI-PB: Investigating Pre-Training Objectives for Generalization in Pixel-Based RL
+            </h3>
+            <p class="paper-authors">
+              <a href="https://i-am-proto.github.io/">Donghu Kim*</a>,
+              <a href="https://joonleesky.github.io/">Hojoon Lee*</a>,
+              <strong>Kyungmin Lee*</strong>,
+              <a href="https://godnpeter.github.io/">Dongyoon Hwang</a>,
+              <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
+            </p>
+            <div class="paper-meta">
+              <span class="venue">ICML 2024</span>
+              <a class="paper-link" href="https://i-am-proto.github.io/atari-pb/"><i class="fas fa-globe" aria-hidden="true"></i>Project Page</a>
+              <a class="paper-link" href="https://arxiv.org/abs/2406.06037"><i class="fas fa-file-lines" aria-hidden="true"></i>arXiv</a>
+              <a class="paper-link" href="https://github.com/dojeon-ai/atari-pb"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="teaching">
